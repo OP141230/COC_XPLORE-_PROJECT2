@@ -23,8 +23,6 @@ fantasyxi/
 │   └── utils.py
 ├── models/                  # saved model checkpoints (.pt)
 ├── notebooks/               # EDA & experiment notebooks
-├── docs/
-│   └── FantasyXI_Proposal.pdf
 ├── requirements.txt
 └── README.md
 ```
