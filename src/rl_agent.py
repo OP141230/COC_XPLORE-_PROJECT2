@@ -1,17 +1,4 @@
-"""
-rl_agent.py
-------------
-Models FPL transfer + captaincy decisions across a season as a sequential
-decision (MDP) problem and trains a DQN-style agent to balance immediate
-points against long-term season/rank objectives.
 
-State:   current squad, bank balance, free transfers, chip availability,
-         forecasted points for next K gameweeks for all players.
-Action:  {transfer in/out pair (or none), captain choice, chip use (or none)}
-Reward:  realised gameweek points (with a season-end bonus shaped by final
-         rank proxy), discounted across gameweeks so the agent learns to
-         trade short-term points for long-term squad value / hits avoided.
-"""
 
 import argparse
 import random
