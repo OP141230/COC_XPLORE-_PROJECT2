@@ -1,23 +1,4 @@
-"""
-game_theory.py
----------------
-Turns raw point forecasts + ownership data into rank-aware recommendations.
 
-Core idea (from "Differential Ownership and Fantasy Football Strategy"):
-a player's value to YOUR rank is not just their expected points (EV) — it's
-their expected points relative to the field, weighted by how many of your
-rivals also own them. A high-EV, high-ownership ("template") pick protects
-rank; a lower-EV, low-ownership ("differential") pick is a variance play that
-can only be justified if its expected *rank gain* outweighs the downside risk.
-
-We model this with a simple zero-sum-ish rank-gain score:
-
-    rank_gain_score(p) = EV(p) * (1 - ownership(p)) - risk_penalty(p)
-
-where risk_penalty grows with ownership-weighted variance, and a
-risk-tolerance parameter (lambda) lets the user dial between
-"protect rank" (template-heavy) and "climb ranks" (differential-heavy).
-"""
 
 import argparse
 
