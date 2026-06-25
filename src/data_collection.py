@@ -1,15 +1,4 @@
-"""
-data_collection.py
-------------------
-Pulls live data from the official Fantasy Premier League (FPL) public API
-and stores per-gameweek snapshots so player histories can be reconstructed
-as proper time series.
 
-Official endpoints used:
-  - https://fantasy.premierleague.com/api/bootstrap-static/   (players, teams, GWs)
-  - https://fantasy.premierleague.com/api/fixtures/           (fixtures + FDR)
-  - https://fantasy.premierleague.com/api/element-summary/{player_id}/  (per-player history)
-"""
 
 import argparse
 import json
