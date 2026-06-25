@@ -21,8 +21,6 @@ fantasyxi/
 │   ├── rl_agent.py          # RL environment + agent for transfers & captaincy
 │   ├── squad_optimizer.py   # ILP-based squad/transfer optimizer under budget+rules
 │   └── utils.py
-├── models/                  # saved model checkpoints (.pt)
-├── notebooks/               # EDA & experiment notebooks
 ├── requirements.txt
 └── README.md
 ```
