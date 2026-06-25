@@ -1,16 +1,4 @@
-"""
-squad_optimizer.py
---------------------
-Given per-player expected points (from the forecaster) and the official
-FPL squad rules, solves the constrained squad-selection / transfer problem
-via Integer Linear Programming (PuLP):
 
-  - 15-man squad: 2 GK, 5 DEF, 5 MID, 3 FWD
-  - Total cost <= 100.0 (budget)
-  - Max 3 players from any one real-world club
-  - Starting XI formation must be valid (>=1 GK, >=3 DEF, >=2 MID, >=1 FWD,
-    11 total starters), captain = highest-EV starter (counts double)
-"""
 
 import argparse
 
