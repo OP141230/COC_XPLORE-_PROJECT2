@@ -86,11 +86,3 @@ python src/rl_agent.py --train --episodes 2000
 - RL agent is validated by simulating a full season (38 GWs) against a
   greedy (points-maximizing, no foresight) baseline and comparing total
   season score and final rank.
-
-## 5. References
-
-- Official FPL API: `https://fantasy.premierleague.com/api/`
-- OpenFPL — open-source forecasting method for FPL
-- "Time Series Modeling for Dream Team in Fantasy Premier League"
-- "Differential Ownership and Fantasy Football Strategy"
-- "Competing with Humans at Fantasy Football: Team Formation and Management"
