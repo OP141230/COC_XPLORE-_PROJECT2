@@ -1,16 +1,4 @@
-"""
-feature_engineering.py
------------------------
-Builds per-player gameweek time-series feature tables from the raw FPL
-data pulled by data_collection.py, ready for sequence modelling.
 
-Features per gameweek per player:
-  minutes, total_points, goals_scored, assists, expected_goals (xG),
-  expected_assists (xA), expected_goal_involvements (xGI),
-  expected_goals_conceded (xGC), bonus, bps, ict_index, influence,
-  creativity, threat, was_home, fixture_difficulty (FDR), selected_by_percent,
-  value (price), transfers_in/out (ownership momentum), rolling 3/5-GW form.
-"""
 
 import argparse
 import glob
