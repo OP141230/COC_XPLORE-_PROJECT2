@@ -1,10 +1,4 @@
-"""
-forecasting_model.py
----------------------
-BiLSTM + Attention network that forecasts a player's expected points
-for the next gameweek(s) from a sliding window of past performance
-features (form, xG, xA, xGI, minutes, fixture difficulty, ownership, price).
-"""
+
 
 import argparse
 import os
